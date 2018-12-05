@@ -33,7 +33,7 @@ body {
 
 
 
-.btn-group .button {
+.btn-group a.button {
   background-color: #ED2553; 
   border: 1px solid #DC1240;
   color: white;
@@ -47,11 +47,11 @@ body {
   width: 33.3333%;
 }
 
-.btn-group .button:not(:last-child) {
+.btn-group a.button:not(:last-child) {
   border-right: none; /* Prevent double borders */
 }
 
-.btn-group .button:hover {
+.btn-group a.button:hover {
   background-color: #DC1240;
 }
 
