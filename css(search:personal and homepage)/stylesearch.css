@@ -1,0 +1,81 @@
+
+
+.title {
+   width: 100%;
+   float: left;
+   line-height: 46px;
+   font-size: 34px;
+   font-weight: 700;
+   letter-spacing: 2px;
+   color: #ED2553;
+   position: relative;
+}
+
+body {
+   background-image: url('http://cdn.wallpapersafari.com/13/6/Mpsg2b.jpg');
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   min-height: 100vh;
+   font-family: 'Roboto', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+
+
+input[type=text] {
+	width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-search select {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  vertical-align: middle;
+  height:30px
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+input[type=submit] {
+    background-color: #ED2553;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 8px 0;
+    width: 100%;
+}
+
+
+input[type=submit]:hover {
+    background-color: #DC1240;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+	width: 100%;
+    max-width: 460px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 36px;
+}
+
