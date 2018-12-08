@@ -1,10 +1,9 @@
 
-
 .title {
    width: 100%;
    float: left;
    line-height: 46px;
-   font-size: 34px;
+   font-size: 40px;
    font-weight: 700;
    letter-spacing: 2px;
    color: #ED2553;
@@ -12,7 +11,7 @@
 }
 
 body {
-   background-image: url('http://cdn.wallpapersafari.com/13/6/Mpsg2b.jpg');
+   background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
@@ -26,22 +25,26 @@ body {
 
 input[type=text] {
 	width: 100%;
-    padding: 10px;
+    padding: 20px;
     margin: 5px 0 22px 0;
     display: inline-block;
     border: none;
     background: #f1f1f1;
+	font-size:25px;
+    font-weight: 300;
 }
 
 .form-search select {
   width: 100%;
-  padding: 15px;
+  padding: 20px;
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
   background: #f1f1f1;
   vertical-align: middle;
-  height:30px
+  font-size:25px;
+  font-weight: 300;
+  color:gray;
 }
 
 .form-inline label {
@@ -51,12 +54,13 @@ input[type=text] {
 input[type=submit] {
     background-color: #ED2553;
     color: white;
-    padding: 12px 20px;
+    padding: 20px 30px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     margin: 8px 0;
     width: 100%;
+	font-size:25px;
 }
 
 
@@ -67,15 +71,15 @@ input[type=submit]:hover {
 .container {
     border-radius: 5px;
     background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 20px;
-	width: 100%;
-    max-width: 460px;
+	width: 80%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-	font-size: 20px;
-	font-weight: 300;
-	line-height: 36px;
+	font-size: 25px;
+	line-height: 40px;
+	margin: auto;
 }
 
