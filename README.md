@@ -1,69 +1,35 @@
-# Hello World PhoneGap Template [![bitHound Score][bithound-img]][bithound-url]
+# FoodMate App - Design and Development of Web and Mobile Applications Fall 2018 Project 
 
-A PhoneGap Hello World template
+FoodMate - an application to help students find peers to enjoy meals with
 
-## Usage
+All project files reside under the www folder present in the root directory.
 
-#### PhoneGap CLI
+Directory Structure understanding:
 
-The hello-world template is the default when you create a new application using the [phonegap-cli][phonegap-cli-url].
+css/scss - CSS files [general]
+js - Javascript files [general]
+vendor - bootstrap and jquery files for index.html
 
-    phonegap create my-app
+Files we worked on:
 
-Create an app using this template specifically:
+- index.html: Homepage of the app with information about the app - potential users, benefits and rewards. Links to Login_index.html and SignUp_index.html. 
 
-    phonegap create my-app --template hello-world
+- Login_index.html: Form that uses login.php to authenticate the email-password values with the ones in our login_details table.
 
-To see a list of other available PhoneGap templates:
+- SignUp_index.html: Form that uses insert.php to validate whether the email exists and if not inserts all information into the login_details table and redirects user to Login_index.html.
 
-    phonegap template list
+- Personal_Information.html: Form that uses action_page.php to create a session and store user information in the user_profile_details table and call that information on Homepage.html
 
-## [config.xml][config-xml]
+- Homepage.html: This is the User profile page. Username is shown on webpage using the the session created earlier. It redirects to update information in Personal_Information.html or set food preferences in Search.html
 
-#### android-minSdkVersion (Android only)
+- Search.html: Form that uses findfriend.php to insert all data into user_food_details table and redirect user to FindFriend_index.html
 
-Minimum SDK version supported on the target device. Maximum version is blank by default.
+- FindFriend_index.html: Displays a set of users/students with whom the user could have lunch based on the exact match of timings. User can click the text option to send a message via the messages application on their phone.
 
-This template sets the minimum to `14`.
+Things that don't work in this scope of work:
 
-    <preference name="android-minSdkVersion" value="14" />
+1. Personal_Information.html is not able to retrieve user information from database due to mysqlnd driver being not present.
 
-#### &lt;access ...&gt; (All)
-
-This template defaults to wide open access.
-
-    <access origin="*" />
-
-It is strongly encouraged that you restrict access to external resources in your application before releasing to production.
-
-For more information on whitelist configuration, see the [Cordova Whitelist Guide][cordova-whitelist-guide] and the [Cordova Whitelist Plugin documentation][cordova-plugin-whitelist]
-
-## [www/index.html][index-html]
-
-#### Content Security Policy (CSP)
-
-The default CSP is similarly open:
-
-    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
-
-Much like the access tag above, you are strongly encouraged to use a more restrictive CSP in production.
-
-A good starting point declaration might be:
-
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" />
-
-For more information on the Content Security Policy, see the [section on CSP in the Cordova Whitelist Plugin documentation][cordova-plugin-whitelist-csp].
-
-Another good resource for generating a good CSP declaration is [CSP is Awesome][csp-is-awesome]
+2. findfriend.php isn't able to retrieve user matches as expected. For now, FindFriend_index.html shows a static list of 3 friends they can connect to.
 
 
-[phonegap-cli-url]: http://github.com/phonegap/phonegap-cli
-[cordova-app]: http://github.com/apache/cordova-app-hello-world
-[bithound-img]: https://www.bithound.io/github/phonegap/phonegap-app-hello-world/badges/score.svg
-[bithound-url]: https://www.bithound.io/github/phonegap/phonegap-app-hello-world
-[config-xml]: https://github.com/phonegap/phonegap-template-hello-world/blob/master/config.xml
-[index-html]: https://github.com/phonegap/phonegap-template-hello-world/blob/master/www/index.html
-[cordova-whitelist-guide]: https://cordova.apache.org/docs/en/dev/guide/appdev/whitelist/index.html
-[cordova-plugin-whitelist]: http://cordova.apache.org/docs/en/latest/reference/cordova-plugin-whitelist
-[cordova-plugin-whitelist-csp]: http://cordova.apache.org/docs/en/latest/reference/cordova-plugin-whitelist#content-security-policy
-[csp-is-awesome]: http://cspisawesome.com
