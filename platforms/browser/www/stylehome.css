@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #50a3a2 0%, #53e3a6 100%);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 'Roboto', sans-serif;
+	min-height: 100vh;
+}
+
+.card {
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin: auto;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	border-radius: 5px;
+	padding: 20px;
+	width: 80%;
+	font-size: normal 100%;
+	font-weight: 300;
+	line-height: 15px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn-group .button {
+  background-color: #ED2553; 
+  border: 1px solid #DC1240;
+  color: white;
+  padding: 15px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: normal 100%;
+  cursor: pointer;
+  float:left;
+  width: 50%;
+}
+
+.btn-group .button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+	background-color: #DC1240;
+}
+.title {
+  color: grey;
+  font-size: normal 150%;
+}
+
+.person{
+	max-width:100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+
+
