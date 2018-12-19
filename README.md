@@ -7,7 +7,9 @@ All project files reside under the www folder present in the root directory.
 Directory Structure understanding:
 
 css/scss - CSS files [general]
+
 js - Javascript files [general]
+
 vendor - bootstrap and jquery files for index.html
 
 Files we worked on:
